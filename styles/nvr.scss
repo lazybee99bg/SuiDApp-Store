@@ -1,0 +1,421 @@
+
+@use "variables";
+
+.body
+{   
+    height: 100%;
+    width: 100%;
+    
+}
+.ElectronicWallet-banner {
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+.Bgcolor-Wallet
+{
+    justify-items: center;
+    text-align: center;
+    background-color:#299753;
+    border-radius: 1.25em;
+    margin-top: 25px;
+    @media (min-width: 768px) { 
+    margin-top: 130px;
+         }
+}
+.Bgcolor-Wallet1
+{
+    justify-items: center;
+    text-align: center;
+    background-color:#cc703c;
+    border-radius: 1.25em;
+    margin-top: 25px;
+    @media (min-width: 768px) { 
+    margin-top: 130px;
+         }
+}
+.Bgcolor-Worlk
+{
+    justify-items: center;
+    text-align: center;
+    background-color:#299753;
+    border-radius: 1.25em;
+    margin-top: 25px;
+    @media (min-width: 768px) { 
+    margin-top: 25px;
+         }
+}
+.Bgcolor-Worlk1
+{
+    justify-items: center;
+    text-align: center;
+    background-color:#cc703c;
+    border-radius: 1.25em;
+    margin-top: 25px;
+   
+}
+.Text-Content
+{
+    font-size: 28px ;
+    color: white;
+    font-weight: 700;
+    @media (min-width: 768px) { 
+    font-size: 28px ;
+    color: white;
+    font-weight: 700;
+     }
+    @media (min-width: 1024px) { 
+    text-align: center;
+    font-size: 40px ;
+    color: white;
+    font-weight: 700;
+    
+        
+     }
+    
+
+}
+.text-h1
+{
+    font-size: 28px ;
+    color: #313131;
+    font-weight: 700;
+    @media (min-width: 768px) { 
+    font-size: 28px ;
+    color: #313131;
+    font-weight: 700;
+     }
+    @media (min-width: 1024px) { 
+    text-align: center;
+    font-size: 40px ;
+    color: #313131;
+    font-weight: 700;
+    
+     }
+    
+
+}
+.text-a
+{
+    font-size: 13px ;
+    color: #c8ecde;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-top: 40px;
+    margin-right: 15px;
+    @media (min-width: 768px) { 
+        font-size: 15px ;
+        font-weight: 700;
+     }
+    @media (min-width: 1024px) { 
+    font-size: 19px;
+    margin-bottom: 10px ;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 24px
+     }
+
+    
+}
+.responsive-cols2
+{
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    @media (min-width: 768px) { 
+        margin-left: 10px;
+        margin-right: 14px;
+     }
+    @media (min-width: 1024px) { 
+   
+     }
+     @media (min-width: 1536px) {  
+        
+     }
+}
+
+.responsive-layoutcol-1
+{
+   
+    margin-top: 20px;
+    @media (min-width: 768px) { 
+   
+     }
+    @media (min-width: 1024px) { 
+        // margin-left: 32px;
+        // margin-right: 0px;
+        // margin-top: 20px;
+        
+     }
+     @media (min-width: 1536px) {  
+        // margin-left: 155px;
+        // margin-right: 0px;
+        // margin-top: 20px;
+     }
+}
+.responsive-layoutcol-2
+{
+    
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 20px;
+    @media (min-width: 768px) { 
+        // margin-left: 8px;
+     }
+    @media (min-width: 1024px) { 
+        // margin-left: 0px;
+        // margin-right: 0px;
+        // margin-top: 20px;
+     }
+     @media (min-width: 1536px) {  
+        // margin-left: 0px;
+        // margin-right: 10px;
+        // margin-top: 20px;
+     }
+}
+
+.popOver {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-animation: bummer 1s;
+    animation: bummer 1s;
+    -webkit-transform: scale(0,1); 
+    transform: scale(0,0);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes bummer {
+    100% {
+        -webkit-transform: scale(1,0); 
+    }
+}
+
+@keyframes bummer {
+    100% {
+        transform: scale(1,1); 
+    }
+}
+
+.Block
+{
+    color: #313131;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.Questions
+{
+    
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.table-Block
+{
+ 
+    display: flex;
+    justify-items: center;
+    background-color: #f8f8f8 ;
+    text-align: center;
+    align-items: center;
+    border-width: 0px;
+    border-radius: 0.5em; 
+    padding: 15px;
+    margin: 5px;
+    width: 64px;
+    @media (min-width: 1024px) { 
+        border-radius: 1.5em;
+        padding: 30px;
+        width: auto;
+        height: auto;
+        
+        
+     }
+     @media (min-width: 1536px) { 
+      border-radius: 1.5em;
+      padding: 30px;
+      width: 150px;
+      height: auto;
+      margin-left: 25px;
+      
+      
+   }
+    }
+.Slogan
+{
+    
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+.table-hover
+{
+    background-color: white;
+    border-radius: 1em;	
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: 5x;
+    margin-right: 5px;
+    @media (min-width: 768px) { 
+        margin: 0px;
+        padding: auto;
+     }
+    
+    
+}
+.theme-dark
+{
+    background-color: black;
+    color: white;
+}
+.theme-light
+{
+    background-color: white;
+    color: black;
+}
+.text_footer
+{
+
+  font-size: 3rem;
+  color: white
+  ;
+  font-weight: 700;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+  @media (min-width: 1024px) { 
+    font-size: 3rem;
+
+   
+    
+   }
+   
+}
+.text_header{
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 700;
+    align-items: center;
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
+    @media (min-width: 1024px) { 
+      font-size: 2rem;
+      display: flex;
+}
+}
+.text_Get_name
+{
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 700;
+    align-items: center;
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
+    @media (min-width: 1024px) { 
+      font-size: 3rem;
+      display: flex;
+}
+}
+
+.shadow_header {
+    box-shadow: 0px 0px 1px 0px inset;
+}
+// .Background_name_service {
+// 	background-image: url(../assets/images/Bg/biglight.svg);
+// 	height: 100%;
+// 	width: 100%;
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+//     background-size: cover;
+  
+// }
+.Background_icontoken {
+    background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.375555) 100%);
+	// background-image: url(../assets/images/Bg/bg.svg);
+	height: auto;
+	width: auto;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+    
+}
+// .Background_wallet {
+// 	background-image: url(../assets/images/Bg/bg.png);
+// 	height: 100%;
+// 	width: 100%;
+// 	/* Center and scale the image nicely */
+// 	background-position: right;
+// 	background-repeat: no-repeat;
+// 	background-size: auto;
+// }
+// .Background_iphonedemo {
+// 	background-image: url(../assets/images/Bg/Backgrounddemo.svg);
+// 	height: 100%;
+// 	width: 100%;
+// 	/* Center and scale the image nicely */
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// }
+// .Background_light {
+// 	background-image: url(../assets/images/lighticon/light.svg);
+// 	height: 100%;
+// 	width: 100%;
+// 	/* Center and scale the image nicely */
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+// 	background-size: contain;
+    
+// }
+// .Background_light1 {
+// 	background-image: url(../assets/images/lighticon/Group21.svg);
+// 	height: 100%;
+// 	width: 100%;
+//     position: relative;
+// 	/* Center and scale the image nicely */
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+// 	background-size: contain;
+    
+// }
+// .Background_light2 {
+// 	background-image: url(../assets/images/lighticon/Group22.svg);
+// 	height: 100%;
+// 	width: 100%;
+// 	/* Center and scale the image nicely */
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+// 	background-size: contain;
+    
+// }
+// .Background_light3 {
+// 	background-image: url(../assets/images/lighticon/Group7.svg);
+// 	height: 100%;
+// 	width: 100%;
+// 	/* Center and scale the image nicely */
+// 	background-position: top;
+// 	background-repeat: no-repeat;
+// 	background-size: contain;
+    
+// }
