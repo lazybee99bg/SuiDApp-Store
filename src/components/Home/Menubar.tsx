@@ -4,7 +4,7 @@ type Menubar = {
 	data: any
 }
 function Menubar({ data }: Menubar) {
-	const Menu = [
+	const MenuBar = [
 		{
 			label: 'DApp Recc',
 			link: '/news'
@@ -57,7 +57,7 @@ function Menubar({ data }: Menubar) {
 				<div className='my-10   '>Browsing history</div>
 			</div>
 			<div className=''>
-				{Menu?.map((item: any, index: React.Key | null | undefined) => (
+				{MenuBar?.map((item: any, index: React.Key | null | undefined) => (
 					// eslint-disable-next-line react/jsx-key
 					<Link key={index} href={item.link}>
 						<a
@@ -65,7 +65,9 @@ function Menubar({ data }: Menubar) {
 							// target='_blank'
 							rel='noreferrer'>
 							{/* <div className='icon'></div> */}
-							<h3 className=' text-blue-400 flex  justify-center text-center'>{item.label}</h3>
+							<h3 className=' hover:text-blue-400 flex  justify-center text-center'>
+								{item.label}
+							</h3>
 							<p />
 						</a>
 					</Link>

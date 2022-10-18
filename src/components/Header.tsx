@@ -4,17 +4,21 @@ import { useRouter } from 'next/router'
 import { MenuIcon, XIcon } from '@heroicons/react/solid'
 import Image from 'next/image'
 import Button from '../components/Button'
+import logo from '../../assets/images/Logo/logo.png'
+import { DownloadIcon, SearchIcon } from '@heroicons/react/solid'
+
 import icondowload from '../../assets/images/iconheader/dowload.png'
 import iconglobal from '../../assets/images/iconheader/global.png'
 import icondark from '../../assets/images/iconheader/dark.svg'
 import iconsearch from '../../assets/images/iconheader/Search.svg'
+import InputText from '../common/InputText'
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false)
 	const router = useRouter()
 	const headerEl = [
 		{
 			title: 'Wallet',
-			link: '/home',
+			link: '/x',
 			element: []
 		},
 		{
@@ -30,7 +34,7 @@ const Header = () => {
 
 		{
 			title: 'DApp',
-			link: '',
+			link: '/',
 			element: []
 		},
 		{
@@ -46,7 +50,7 @@ const Header = () => {
 
 		{
 			title: 'Knight Recruitment',
-			link: '',
+			link: '/',
 			element: []
 		},
 		{
@@ -61,7 +65,10 @@ const Header = () => {
 			<div className=' mx-6'>
 				<div className='flex lg:flex-row flex-col justify-between'>
 					<div className='flex flex-row items-center '>
-						<div className='text-4xl'>Sui DApp</div>
+						<div className=' flex justify-center items-center'>
+							<Image src={logo} width={40} height={40} alt='logo' />
+							<span className='text-3xl font-medium ml-2 mr-4'>Glass</span>
+						</div>
 						<div
 							className={` collapsible w-auto lg:p-2 p-0 flex lg:flex-row flex-col lg:items-center md:items-center items-start justify-between font-semibold lg:text-base text-sm text-left md:text-center text-black 
               ${isOpen ? 'lg:h-auto h-[340px]' : 'h-0 lg:h-auto'}`}>
@@ -121,8 +128,8 @@ const Header = () => {
 					</div>
 					<div className=' flex items-center '>
 						<Button
-							href='https://t.me/navaranetwork'
-							className='bg-blue-500 border-[2px] border-gray-800 rounded-xl text-white'>
+							href='/'
+							className='bg-blue-400 border-[1px] border-gray-300 rounded-lg h-10 text-white'>
 							Connect Wallet
 						</Button>
 						<div className=' mx-2'>
@@ -137,19 +144,18 @@ const Header = () => {
 					</div>
 				</div>
 			</div>
-			<div className='mx-20 border-b pb-4'>
-				<div className='flex justify-between   '>
-					<div className='text-4xl'>DApp</div>
-					<div className='flex flex-ro items-center  justify-center  md:pb-0  border-[1px] bg-slate-200 border-gray-100 rounded-xl'>
-						<Image className='lg:hidden block  ' src={iconsearch} alt='iconsearch' />
-						<input
-							type='text'
-							id='first'
-							src={iconsearch}
-							className=' bg-slate-200  text-center text-   h-10 md:h-10  font-semibold form-control input-group-lg'
-							placeholder='Enter DApp name'
-							required
-						/>
+			<div className='mx-24 border-b py-4'>
+				<div className='flex justify-between '>
+					<div className='text-4xl font-medium'>DApp Store</div>
+					<div className=' w-96 bg-gray-100 rounded-lg flex items-center'>
+						<SearchIcon className='w-5 mx-1 inline-block ' />
+						<InputText
+							value=''
+							placeholder='Enter DApp Name'
+							width='w-full '
+							onChange={function (str: string): void {
+								throw new Error('Function not implemented.')
+							}}></InputText>
 					</div>
 				</div>
 			</div>

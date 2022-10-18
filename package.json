@@ -37,6 +37,7 @@
     "rehype-raw": "^6.1.1",
     "remark-gfm": "^3.0.1",
     "sass": "^1.50.0",
+    "truncate": "^3.0.0",
     "url-slug": "^3.0.3",
     "use-local-storage": "^2.3.6"
   },

@@ -360,62 +360,25 @@
 	background-size: contain;
     
 }
-// .Background_wallet {
-// 	background-image: url(../assets/images/Bg/bg.png);
-// 	height: 100%;
-// 	width: 100%;
-// 	/* Center and scale the image nicely */
-// 	background-position: right;
-// 	background-repeat: no-repeat;
-// 	background-size: auto;
-// }
-// .Background_iphonedemo {
-// 	background-image: url(../assets/images/Bg/Backgrounddemo.svg);
-// 	height: 100%;
-// 	width: 100%;
-// 	/* Center and scale the image nicely */
-// 	background-position: center;
-// 	background-repeat: no-repeat;
-// 	background-size: cover;
-// }
-// .Background_light {
-// 	background-image: url(../assets/images/lighticon/light.svg);
-// 	height: 100%;
-// 	width: 100%;
-// 	/* Center and scale the image nicely */
-// 	background-position: center;
-// 	background-repeat: no-repeat;
-// 	background-size: contain;
+
+.text_truncate{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -moz-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    word-wrap: break-word;
     
-// }
-// .Background_light1 {
-// 	background-image: url(../assets/images/lighticon/Group21.svg);
-// 	height: 100%;
-// 	width: 100%;
-//     position: relative;
-// 	/* Center and scale the image nicely */
-// 	background-position: center;
-// 	background-repeat: no-repeat;
-// 	background-size: contain;
+}
+
+.truncate {
     
-// }
-// .Background_light2 {
-// 	background-image: url(../assets/images/lighticon/Group22.svg);
-// 	height: 100%;
-// 	width: 100%;
-// 	/* Center and scale the image nicely */
-// 	background-position: center;
-// 	background-repeat: no-repeat;
-// 	background-size: contain;
-    
-// }
-// .Background_light3 {
-// 	background-image: url(../assets/images/lighticon/Group7.svg);
-// 	height: 100%;
-// 	width: 100%;
-// 	/* Center and scale the image nicely */
-// 	background-position: top;
-// 	background-repeat: no-repeat;
-// 	background-size: contain;
-    
-// }
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

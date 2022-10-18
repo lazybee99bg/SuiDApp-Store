@@ -26,7 +26,7 @@ function New({ data }: New) {
 				<div className='my-5'>
 					<span className='font-bold text-3xl'>News</span>
 				</div>
-				<div className='grid grid-cols-4 gap-4 '>
+				<div className='grid grid-cols-1 md:grid-cols-4 gap-4 '>
 					{addressData
 						? addressData.map((item: any, index: React.Key | null | undefined) => (
 								// eslint-disable-next-line react/jsx-key
@@ -41,7 +41,7 @@ function New({ data }: New) {
 										</div>
 										<span className='font-bold text-lg mx-2'>{item.name}</span>
 									</div>
-									<span className=''>{item.description}</span>
+									<span className='text_truncate break-normal	'>{item.description}</span>
 								</a>
 						  ))
 						: null}
