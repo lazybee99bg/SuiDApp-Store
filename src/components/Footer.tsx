@@ -108,10 +108,10 @@ const Footer = () => {
 			<div className=' '>
 				<div className='grid grid-cols-1 md:grid-cols-6'>
 					<div className='flex justify-center  py-5 md:py-1'>
-						<div className='-mt-3'>
+						<div className='-mt-3 md:-mt-1'>
 							<Image src={logo} width={40} height={40} alt='logo' />
 						</div>
-						<h1 className='ml-4 lg:text-2xl  text-white'>DApp Store</h1>
+						<h1 className='ml-4 lg:text-2xl font-semibold  text-white'>DApp Store</h1>
 					</div>
 					{footerEl.map((item, index) => (
 						<div key={index} className=' hidden md:block'>
