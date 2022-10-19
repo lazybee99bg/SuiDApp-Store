@@ -51,25 +51,21 @@ function Menubar({ data }: Menubar) {
 		}
 	]
 	return (
-		<div className='  border-r '>
-			<div className='  border-b '>
-				<h3 className='ml-2 flex items-center hover:text-[#e73759] w-44 h-14 hover:border hover:border-gray-200  hover:rounded-lg hover:bg-[#d2c0c3]  '>
-					My Favorite
-				</h3>
-				<h3 className='ml-2 flex items-center hover:text-[#e73759] w-44 h-14 hover:border hover:border-gray-200  hover:rounded-lg hover:bg-[#d2c0c3] '>
-					Browsing history
-				</h3>
+		<div className='  border-r'>
+			<div className='  border-b'>
+				<div className='my-10   '>My Favorite</div>
+				<div className='my-10   '>Browsing history</div>
 			</div>
 			<div className=''>
 				{MenuBar?.map((item: any, index: React.Key | null | undefined) => (
 					// eslint-disable-next-line react/jsx-key
 					<Link key={index} href={item.link}>
 						<a
-							className='cursor-pointer single-about-us  flex  w-44 h-14 text-center  hover:border hover:border-gray-200  hover:rounded-lg hover:bg-[#d2c0c3] '
+							className='cursor-pointer single-about-us  flex  w-44 h-14 text-center  hover:border hover:border-gray-200 hover:bg-gray-200 hover:rounded-lg  '
 							// target='_blank'
 							rel='noreferrer'>
 							{/* <div className='icon'></div> */}
-							<h3 className='ml-2  flex items-center hover:text-[#e73759] justify-center text-center'>
+							<h3 className=' hover:text-blue-400 flex  justify-center text-center'>
 								{item.label}
 							</h3>
 							<p />

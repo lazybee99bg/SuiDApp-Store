@@ -20,13 +20,15 @@ function New({ data }: New) {
 	console.log(addressData)
 
 	return (
-		<div className='w-full flex mx-10  bg-white'>
-			<Menubar data={undefined} />
-			<div className='m-5'>
+		<div className='w-full md:flex md:mx-6  bg-white'>
+			<div className=' hidden lg:block'>
+				<Menubar data={undefined} />
+			</div>
+			<div className='m-3'>
 				<div className='my-5'>
 					<span className='font-bold text-3xl'>News</span>
 				</div>
-				<div className='grid grid-cols-1 md:grid-cols-4 gap-4 '>
+				<div className='grid grid-cols-2 md:grid-cols-4 gap-4 '>
 					{addressData
 						? addressData.map((item: any, index: React.Key | null | undefined) => (
 								// eslint-disable-next-line react/jsx-key
