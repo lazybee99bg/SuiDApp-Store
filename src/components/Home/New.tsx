@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { getDapp } from '../../api/suidapp'
 import Menubar from './Menubar'
+import MenubarMobile from './MenuBarMobile'
 
 type New = {
 	data: any
@@ -21,14 +22,17 @@ function New({ data }: New) {
 
 	return (
 		<div className='w-full md:flex md:mx-6  bg-white'>
-			<div className=' hidden lg:block'>
+			<div className='  display'>
 				<Menubar data={undefined} />
+			</div>
+			<div className=' display1'>
+				<MenubarMobile data={undefined} />
 			</div>
 			<div className='m-3'>
 				<div className='my-5'>
 					<span className='font-bold text-3xl'>News</span>
 				</div>
-				<div className='grid grid-cols-2 md:grid-cols-4 gap-4 '>
+				<div className='grid grid-cols-2 sm:grid-cols-4 gap-4 '>
 					{addressData
 						? addressData.map((item: any, index: React.Key | null | undefined) => (
 								// eslint-disable-next-line react/jsx-key

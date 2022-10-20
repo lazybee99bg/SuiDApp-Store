@@ -1,10 +1,22 @@
 import Link from 'next/link'
 import React from 'react'
+import EmblaCarousel from './EmblaCarousel'
+import ScamToken from '../../../assets/images/iconfooter/Facebook.svg'
+import MobilePhishing from '../../../assets/images/iconfooter/Instgram.svg'
+import Abnormal from '../../../assets/images/iconfooter/Linkedin.svg'
 type Menubar = {
 	data: any
 }
 function Menubar({ data }: Menubar) {
 	const MenuBar = [
+		{
+			label: 'My Favorite',
+			link: '/'
+		},
+		{
+			label: 'Browsing history',
+			link: '#'
+		},
 		{
 			label: 'DApp Recc',
 			link: '/news'
@@ -51,28 +63,8 @@ function Menubar({ data }: Menubar) {
 		}
 	]
 	return (
-		<div className='  border-r'>
-			<div className='  border-b'>
-				<div className='my-10   '>My Favorite</div>
-				<div className='my-10   '>Browsing history</div>
-			</div>
-			<div className=''>
-				{MenuBar?.map((item: any, index: React.Key | null | undefined) => (
-					// eslint-disable-next-line react/jsx-key
-					<Link key={index} href={item.link}>
-						<a
-							className='cursor-pointer single-about-us  flex  w-44 h-14 text-center  hover:border hover:border-gray-200 hover:bg-gray-200 hover:rounded-lg  '
-							// target='_blank'
-							rel='noreferrer'>
-							{/* <div className='icon'></div> */}
-							<h3 className=' hover:text-blue-400 flex  justify-center text-center'>
-								{item.label}
-							</h3>
-							<p />
-						</a>
-					</Link>
-				))}
-			</div>
+		<div className='  '>
+			<EmblaCarousel slides={MenuBar} className='mt-1' />
 		</div>
 	)
 }

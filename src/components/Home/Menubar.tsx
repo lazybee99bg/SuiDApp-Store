@@ -33,20 +33,17 @@ function Menubar({ data }: Menubar) {
 			label: 'Tools',
 			link: '#'
 		},
-		{
-			label: 'NFT',
-			link: '#'
-		},
+
 		{
 			label: 'GameFi',
 			link: '#'
 		},
 		{
-			label: 'GameFi',
+			label: 'Social',
 			link: '#'
 		},
 		{
-			label: 'Landing',
+			label: 'Lending',
 			link: '#'
 		}
 	]
@@ -65,11 +62,11 @@ function Menubar({ data }: Menubar) {
 					// eslint-disable-next-line react/jsx-key
 					<Link key={index} href={item.link}>
 						<a
-							className='cursor-pointer single-about-us  flex  w-44 h-14 text-center  hover:border hover:border-gray-200  hover:rounded-lg hover:bg-[#d2c0c3] '
+							className='cursor-pointer single-about-us  flex  w-44 h-14 text-center  hover:border  hover:rounded-lg hover:bg-[#d2c0c3] '
 							// target='_blank'
 							rel='noreferrer'>
 							{/* <div className='icon'></div> */}
-							<h3 className='ml-2  flex items-center hover:text-[#e73759] justify-center text-center'>
+							<h3 className='ml-2  flex items-center hover:text-[#e73759] w-44 h-14  hover:border-gray-200  hover:rounded-lg '>
 								{item.label}
 							</h3>
 							<p />

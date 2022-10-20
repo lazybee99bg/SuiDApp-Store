@@ -340,15 +340,7 @@
 .shadow_header {
     box-shadow: 0px 0px 1px 0px inset;
 }
-// .Background_name_service {
-// 	background-image: url(../assets/images/Bg/biglight.svg);
-// 	height: 100%;
-// 	width: 100%;
-// 	background-position: center;
-// 	background-repeat: no-repeat;
-//     background-size: cover;
-  
-// }
+
 .Background_icontoken {
     background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.375555) 100%);
 	// background-image: url(../assets/images/Bg/bg.svg);
@@ -457,4 +449,19 @@
 }
 .toggle .line__3 {
   transform: translate(-5px, -7px) rotate(45deg);
+}
+
+.display{
+      display: none;
+  @media (min-width: 768px) {
+     display: block  ; 
+  }
+ 
+}
+.display1{
+  display: block;
+@media (min-width: 768px) {
+ display:  none ; 
+}
+
 }
