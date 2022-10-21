@@ -176,9 +176,9 @@ const Footer = () => {
 							<Image src={Twitter} width={30} height={30} alt='Twitter' objectFit='cover' />
 						</a>
 					</Link>
-					<Link href='https://' passHref>
+					<Link href='https://discord.com/invite/88UC42UJ' passHref>
 						<a className='mr-4'>
-							<Image src={Instgram} width={30} height={30} alt='Instgram' objectFit='cover' />
+							<Image src={Instgram} width={30} height={30} alt='discord' objectFit='cover' />
 						</a>
 					</Link>
 					<Link href='https://' passHref>

@@ -45,7 +45,9 @@ function New({ data }: New) {
 										<div className='rounded-full  w-10 h-10 items-center justify-center bg-white border flex border-gray-100'>
 											<img src={item.logo} width={30} height={30} className='rounded-full' />
 										</div>
-										<span className='font-bold md:text-xs mx-2'>{item.name}</span>
+										<span className='font-bold md:text-xs mx-2'>
+											{item.name} || {item.category}
+										</span>
 									</div>
 									<span className='text_truncate break-normal	'>{item.description}</span>
 								</a>

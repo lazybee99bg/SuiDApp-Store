@@ -31,7 +31,7 @@ const EmblaCarousel = ({ slides, className }: any) => {
 				<div className='embla__container'>
 					{slides.map((item: any, index: any) => (
 						<div className='embla__slide' key={index}>
-							<h3 className=' hover:text-blue-400 '>{item.label}</h3>
+							<h3 className=' hover:text-[#e73759] '>{item.label}</h3>
 						</div>
 					))}
 				</div>

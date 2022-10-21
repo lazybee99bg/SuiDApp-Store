@@ -124,7 +124,7 @@ const Header = () => {
 			</div>
 			<div className='mx-6 border-b pb-5'>
 				<div className='flex items-center justify-between'>
-					<div className='text-lg sm:text-xl md:text-3xl font-medium'>DApp Store</div>
+					<div className='flex justify-center text-3xl font-medium'>Store</div>
 					<div className=' md:w-96 bg-gray-100 rounded-lg flex items-center'>
 						<SearchIcon className='w-5 mx-1 inline-block ' />
 						<InputText
