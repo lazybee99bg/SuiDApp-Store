@@ -70,7 +70,7 @@ const Header = () => {
 					<div className='flex flex-row items-center '>
 						<div className=' flex justify-center items-center  '>
 							<Image src={logo} width={40} height={40} alt='logo' />
-							<span className='text-xl sm:text-2xl md:text-3xl font-medium ml-2 mr-4'>
+							<span className='text-xl sm:text-2xl md:text-3xl font-bold ml-2 mr-4'>
 								Glass DApp
 							</span>
 						</div>
