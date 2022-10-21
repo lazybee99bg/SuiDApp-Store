@@ -39,7 +39,7 @@ function New({ data }: New) {
 								<a
 									target={'_blank'}
 									href={item.link as string}
-									className='border border-gray-100 h-40 rounded-lg p-3 hover:bg-[#f6f4f4] cursor-pointer'
+									className='border border-gray-200 h-40 rounded-lg p-3 hover:bg-[#f6f4f4] cursor-pointer'
 									rel='noreferrer'>
 									<div className='flex flex-row items-center w-full'>
 										<div className='rounded-full  w-10 h-10 items-center justify-center bg-white border flex border-gray-100'>
