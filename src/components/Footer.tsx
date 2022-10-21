@@ -104,14 +104,14 @@ const Footer = () => {
 		}
 	]
 	return (
-		<div className='bg-[#000000] w-auto h-auto py-6'>
+		<div className='bg-[#000000] w-auto h-auto py-5'>
 			<div className=' '>
 				<div className='grid grid-cols-1 md:grid-cols-6'>
 					<div className='flex justify-center  py-5 md:py-1'>
-						<div className='-mt-3 md:-mt-1'>
-							<Image src={logo} width={40} height={40} alt='logo' />
+						<div className=' '>
+							<Image src={logo} width={35} height={35} alt='logo' />
 						</div>
-						<h1 className='ml-4 lg:text-2xl font-semibold  text-white'>DApp Store</h1>
+						<h1 className='ml-4 text-2xl md:text-xl font-semibold  text-white'>Glass DApp</h1>
 					</div>
 					{footerEl.map((item, index) => (
 						<div key={index} className=' hidden md:block'>
@@ -129,7 +129,7 @@ const Footer = () => {
 													{element.link.includes('http') ? (
 														<a></a>
 													) : (
-														<a className='transition hover:translate-x-1 hover:text-[#557de2]'>
+														<a className='transition hover:translate-x-1 hover:text-[#e73759]'>
 															{element.name}
 														</a>
 													)}
@@ -163,27 +163,27 @@ const Footer = () => {
 
 			<div className='border-t-[0.2px] border-white opacity-2 grid md:grid-cols-2 justify-center md:justify-end py-3 ml-4'>
 				<h1 className=' text-white font-extralight text-base flex items-center justify-start py-2'>
-					Copyright © 2022 Navara.All Rights Reserved
+					Copyright © 2022 Glass.All Rights Reserved
 				</h1>
 				<div className='flex justify-center md:justify-end'>
 					<Link href='https://' passHref>
 						<a className='mr-4'>
-							<Image src={Facebook} alt='Face' />
+							<Image src={Facebook} width={30} height={30} alt='Face' objectFit='cover' />
 						</a>
 					</Link>
 					<Link href='https://' passHref>
 						<a className='mr-4'>
-							<Image src={Twitter} alt='Twitter' />
+							<Image src={Twitter} width={30} height={30} alt='Twitter' objectFit='cover' />
 						</a>
 					</Link>
 					<Link href='https://' passHref>
 						<a className='mr-4'>
-							<Image src={Instgram} alt='Instgram' />
+							<Image src={Instgram} width={30} height={30} alt='Instgram' objectFit='cover' />
 						</a>
 					</Link>
 					<Link href='https://' passHref>
 						<a className='mr-4'>
-							<Image src={Linkedin} alt='Linkedin' />
+							<Image src={Linkedin} width={30} height={30} alt='Linkedin' objectFit='cover' />
 						</a>
 					</Link>
 				</div>

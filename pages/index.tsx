@@ -11,7 +11,7 @@ const Home: NextPage = () => {
 
 	return (
 		<div>
-			<LayoutPage title='SuiDApp Store'></LayoutPage>
+			<LayoutPage title='Glass DApp'></LayoutPage>
 		</div>
 	)
 }

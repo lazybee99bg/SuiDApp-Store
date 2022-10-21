@@ -2,16 +2,18 @@ $emblabutton: #56acff;
 .embla {
   position: relative;
   padding: 15px;
-  max-width: 670px;
+  // max-width: 670px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .embla__viewport {
-  overflow:   hidden;
+  overflow: hidden;
+  // background-color: #56ac34;
   width: 100%;
-  left:0;
-  right:0;
+  display:flex;
+  // left:0;
+  // right:0;
 }
 
 .embla__viewport.is-draggable {
@@ -30,6 +32,8 @@ $emblabutton: #56acff;
 
 .embla__container {
   display: flex;
+  width:100%;
+  
   user-select: none;
   -webkit-touch-callout: none;
   -khtml-user-select: none;
@@ -37,15 +41,15 @@ $emblabutton: #56acff;
 }
 
 .embla__slide {
-  display: flex;
+  
 
+  display: flex;
   position: relative;
   flex: 0  0 40%;
   max-width: 30%;
   margin-right: 10px;
   height: 25px;
-  left:0;
-  // right:0;
+  
 }
 
 

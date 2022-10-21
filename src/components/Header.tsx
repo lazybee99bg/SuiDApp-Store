@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import Image from 'next/image'
 import logo from '../../assets/images/Logo/logo.png'
 import { DownloadIcon, SearchIcon } from '@heroicons/react/solid'
-import icondowload from '../../assets/images/iconheader/dowload.png'
+// import icondowload from '../../assets/images/iconheader/dowload.png'
 import iconglobal from '../../assets/images/iconheader/global.png'
 import icondark from '../../assets/images/iconheader/dark.svg'
-import iconsearch from '../../assets/images/iconheader/Search.svg'
 import InputText from '../common/InputText'
 
 const Header = () => {
-	const router = useRouter()
 	const [collapse, setCollapse] = useState('nav__menu')
 	const [toggleIcon, setToggleIcon] = useState('toggler__icon')
 
@@ -66,7 +63,6 @@ const Header = () => {
 			element: []
 		}
 	]
-	const [sidebar, setSidebar] = useState(false)
 	return (
 		<header className='relative header bg-white z-10 '>
 			<div className=' mx-6'>
@@ -74,22 +70,13 @@ const Header = () => {
 					<div className='flex flex-row items-center '>
 						<div className=' flex justify-center items-center  '>
 							<Image src={logo} width={40} height={40} alt='logo' />
-							<span className='text-3xl font-medium ml-2 mr-4'>Glass</span>
+							<span className='text-xl sm:text-2xl md:text-3xl font-medium ml-2 mr-4'>
+								Glass DApp
+							</span>
 						</div>
 					</div>
 
 					<div className='flex'>
-						<div className=' flex items-center mt-1  '>
-							<div className=' mx-1'>
-								<Image width={30} height={30} alt='Loading..' objectFit='cover' src={icondowload} />
-							</div>
-							<div className='mx-1'>
-								<Image width={30} height={30} alt='Loading..' objectFit='cover' src={iconglobal} />
-							</div>
-							<div className=' mx-1 mr-4'>
-								<Image width={30} height={30} alt='Loading..' objectFit='cover' src={icondark} />
-							</div>
-						</div>
 						<div className=''>
 							<nav className='nav'>
 								<ul className={collapse}>
@@ -100,7 +87,31 @@ const Header = () => {
 											</a>
 										</li>
 									))}
+									<div className=' flex items-center mt-1  '>
+										{/* <div className=' mx-1'>
+								<Image width={30} height={30} alt='Loading..' objectFit='cover' src={icondowload} />
+							</div> */}
+										<div className='mx-1'>
+											<Image
+												width={30}
+												height={30}
+												alt='Loading..'
+												objectFit='cover'
+												src={iconglobal}
+											/>
+										</div>
+										<div className=' mx-1 mr-4'>
+											<Image
+												width={30}
+												height={30}
+												alt='Loading..'
+												objectFit='cover'
+												src={icondark}
+											/>
+										</div>
+									</div>
 								</ul>
+
 								<div className={toggleIcon} onClick={onToggle}>
 									<div className='line__1'></div>
 									<div className='line__2'></div>
@@ -113,7 +124,7 @@ const Header = () => {
 			</div>
 			<div className='mx-6 border-b pb-5'>
 				<div className='flex items-center justify-between'>
-					<div className='text-xl md:text-3xl font-medium'>DApp Store</div>
+					<div className='text-lg sm:text-xl md:text-3xl font-medium'>DApp Store</div>
 					<div className=' md:w-96 bg-gray-100 rounded-lg flex items-center'>
 						<SearchIcon className='w-5 mx-1 inline-block ' />
 						<InputText

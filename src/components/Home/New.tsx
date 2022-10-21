@@ -29,10 +29,10 @@ function New({ data }: New) {
 				<MenubarMobile data={undefined} />
 			</div>
 			<div className='m-3'>
-				<div className='my-5'>
-					<span className='font-bold text-3xl'>News</span>
+				<div className='my-4'>
+					<span className='font-bold text-xl md:text-3xl'>News</span>
 				</div>
-				<div className='grid grid-cols-2 sm:grid-cols-4 gap-4 '>
+				<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 '>
 					{addressData
 						? addressData.map((item: any, index: React.Key | null | undefined) => (
 								// eslint-disable-next-line react/jsx-key
@@ -42,10 +42,10 @@ function New({ data }: New) {
 									className='border border-gray-100 h-40 rounded-lg p-3 hover:bg-[#f6f4f4] cursor-pointer'
 									rel='noreferrer'>
 									<div className='flex flex-row items-center w-full'>
-										<div className='rounded-full h-10 w-10 items-center justify-center bg-white border flex border-gray-100'>
-											<img src={item.logo} width={40} height={40} className='rounded-full' />
+										<div className='rounded-full  w-10 h-10 items-center justify-center bg-white border flex border-gray-100'>
+											<img src={item.logo} width={30} height={30} className='rounded-full' />
 										</div>
-										<span className='font-bold text-lg mx-2'>{item.name}</span>
+										<span className='font-bold md:text-xs mx-2'>{item.name}</span>
 									</div>
 									<span className='text_truncate break-normal	'>{item.description}</span>
 								</a>

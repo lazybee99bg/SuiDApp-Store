@@ -1,63 +1,3 @@
-export interface CMC {
-	score: number
-	explain: string
-}
-
-export interface CMCPrice {
-	score: number
-	explain: string
-}
-
-export interface Name {
-	score: number
-	explain: string
-}
-
-export interface Symbol {
-	score: number
-	explain: string
-}
-
-export interface Decimal {
-	score: number
-	explain: string
-}
-
-export interface Price {
-	score: number
-	explain: string
-}
-
-export interface TxCount {
-	score: number
-	explain: string
-}
-
-export interface ContractVerified {
-	score: number
-	explain: string
-}
-
-export interface TSupply {
-	score: number
-	explain: string
-}
-
-export interface Owner {
-	score: number
-	explain: string
-}
-
-export interface OwnerHold {
-	score: number
-	explain: string
-}
-
-export interface HoldersCount {
-	score: number
-	explain: string
-}
-
 export interface Icon {
 	score: number
 	explain: string
@@ -181,4 +121,12 @@ type Domain = {
 export type RecommendedDapp = {
 	dapp: Dapp
 	suggested: string[]
+}
+export type Filter = {
+	placeholder?: string
+	className?: string
+	token?: string
+	symbol?: string
+	address?: string
+	tokens: TokenType[]
 }

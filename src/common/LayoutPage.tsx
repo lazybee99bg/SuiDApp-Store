@@ -11,7 +11,7 @@ const LayoutPage = ({ children, title }: LayoutPageProps) => {
 	return (
 		<div>
 			<Head>
-				<title>{title || 'SuiDApp Store'}</title>
+				<title>{title || 'Glass DApp'}</title>
 				<link rel='icon' href='/logoglass.svg' />
 			</Head>
 			<main>
