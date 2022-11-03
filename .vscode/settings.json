@@ -2,5 +2,5 @@
 	"editor.formatOnSave": true,
 	"editor.formatOnSaveMode": "modifications",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"cSpell.words": ["logoglass"]
+	"cSpell.words": ["Filtes", "icondowload", "logoglass"]
 }

@@ -1,9 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
 import EmblaCarousel from './EmblaCarousel'
-import ScamToken from '../../../assets/images/iconfooter/Facebook.svg'
-import MobilePhishing from '../../../assets/images/iconfooter/Instgram.svg'
-import Abnormal from '../../../assets/images/iconfooter/Linkedin.svg'
 type Menubar = {
 	data: any
 }
@@ -18,7 +15,7 @@ function Menubar({ data }: Menubar) {
 			link: '#'
 		},
 		{
-			label: 'DApp Recc',
+			label: 'DApp ',
 			link: '/news'
 		},
 		{
@@ -26,45 +23,25 @@ function Menubar({ data }: Menubar) {
 			link: '#'
 		},
 		{
-			label: 'DeFi',
+			label: 'DApp ',
+			link: '#'
+		},
+		{
+			label: 'Airdrop',
 			link: '#'
 		},
 		{
 			label: 'NFT',
-			link: '#'
-		},
-		{
-			label: 'Bridge',
 			link: '#'
 		},
 		{
 			label: 'Exchange',
 			link: '#'
-		},
-		{
-			label: 'Tools',
-			link: '#'
-		},
-		{
-			label: 'NFT',
-			link: '#'
-		},
-		{
-			label: 'GameFi',
-			link: '#'
-		},
-		{
-			label: 'GameFi',
-			link: '#'
-		},
-		{
-			label: 'Landing',
-			link: '#'
 		}
 	]
 	return (
 		<div className='  '>
-			<EmblaCarousel slides={MenuBar} className='mt-1' />
+			<EmblaCarousel slides={MenuBar} className='' />
 		</div>
 	)
 }

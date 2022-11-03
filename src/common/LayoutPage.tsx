@@ -17,7 +17,7 @@ const LayoutPage = ({ children, title }: LayoutPageProps) => {
 			<main>
 				<Header />
 				{children}
-				<Footer />
+				{/* <Footer /> */}
 			</main>
 		</div>
 	)

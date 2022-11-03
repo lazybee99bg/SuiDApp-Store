@@ -1,11 +1,7 @@
 import React from 'react'
 
 export const DotButton = ({ selected, onClick }: any) => (
-	<button
-		className={`embla__dot ${selected ? 'is-selected' : ''}`}
-		type='button'
-		onClick={onClick}
-	/>
+	<button className={` ${selected ? 'is-selected' : ''}`} type='button' onClick={onClick} />
 )
 
 export const PrevButton = ({ enabled, onClick }: any) => (
@@ -18,7 +14,7 @@ export const PrevButton = ({ enabled, onClick }: any) => (
 
 export const NextButton = ({ enabled, onClick }: any) => (
 	<button
-		className='embla__button embla__button--next rounded-xl rounded-red'
+		className='embla__button embla__button--next rounded-xl '
 		onClick={onClick}
 		disabled={!enabled}>
 		<svg className='' viewBox='0 0 238.003 238.003'>

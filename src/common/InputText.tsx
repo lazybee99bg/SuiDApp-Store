@@ -38,7 +38,7 @@ const InputText = ({
 				onKeyDown={(e) => handleEnter(e)}
 				onChange={(e) => onChange(e.target.value)}
 				className={`
-        transition duration-500 rounded-lg w-96 bg-gray-100 text-left focus:ring-0 focus:outline-none focus:bg-gray-100 
+        transition duration-500 rounded-lg w-80 bg-gray-100 text-left focus:ring-0 focus:outline-none focus:bg-gray-100 
         ${className} ${padding} ${width}`}
 				name='url'
 				id='exampleInputURL'

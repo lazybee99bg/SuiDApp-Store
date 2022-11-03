@@ -3,9 +3,9 @@ import axios, { Axios } from 'axios'
 import { RecommendedDapp } from '../types/types'
 
 const API = axios.create({
-	baseURL: 'https://qoun6czv.directus.app/items/dapp',
+	baseURL: 'https://2qkqa80i.directus.app/items/Dapps',
 	headers: {
-		Authorization: 'Bearer PCbkQ4FFfue0N4qpBloOUoPMV6qukcfo'
+		Authorization: 'Bearer AXMphM7jf_9pQb-ESy0VHFGywigFnnTt'
 	}
 })
 
